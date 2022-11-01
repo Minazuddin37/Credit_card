@@ -104,10 +104,62 @@
         "\n"
       ],
       "metadata": {
-        "id": "6I4XfkHGqqC8"
+        "id": "6I4XfkHGqqC8",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 376
+        },
+        "outputId": "2ecc9aad-f5cf-442b-cf0a-2c73b43c4343"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ImportError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mImportError\u001b[0m                               Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-1-4fa9bd13fac6>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mos\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mtensorflow\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mtf\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 13\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mkeras\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpreprocessing\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mimage\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mload_img\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mimg_to_array\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mImageDataGenerator\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     14\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mkeras\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlayers\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mDense\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mDropout\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mGlobalAveragePooling2D\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mMaxPooling2D\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mFlatten\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mConv2D\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mBatchNormalization\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mActivation\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     15\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mkeras\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmodels\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mModel\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mSequential\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mImportError\u001b[0m: cannot import name 'load_img' from 'keras.preprocessing.image' (/usr/local/lib/python3.7/dist-packages/keras/preprocessing/image.py)",
+            "",
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0;32m\nNOTE: If your import is failing due to a missing package, you can\nmanually install dependencies using either !pip or !apt.\n\nTo view examples of installing some common dependencies, click the\n\"Open Examples\" button below.\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n"
+          ],
+          "errorDetails": {
+            "actions": [
+              {
+                "action": "open_url",
+                "actionText": "Open Examples",
+                "url": "/notebooks/snippets/importing_libraries.ipynb"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "LvbyoU5DmO6H",
+        "outputId": "678f29c5-bd62-4fbd-aa19-f7827138e30e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /content/drive\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "markdown",
